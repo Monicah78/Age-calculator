@@ -1,0 +1,103 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --off-white: hsl(0, 0%, 94%);
+    --light-grey: hsl(0, 0%, 86%);
+    --smokey-grey: hsl(0, 1%, 44%);
+    --off-black: hsl(0, 0%, 8%);
+    --purple: hsl(259, 100%, 65%);
+    --light-red: hsl(0, 100%, 67%);
+}
+
+@font-face {
+    font-family: pop;
+    src: url(https://fonts.google.com/specimen/Poppins);
+}
+
+* {
+    font-family: Pop !important;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--off-white);
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: var(--white);
+    width: 420px;
+    max-width: 80%;
+    padding: 30px;
+    position: relative;
+    /* border-bottom-right-radius: 150px;  */
+}
+
+input {
+    width: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 2px solid var(--off-white);
+    /* border: none; */
+    outline: none;
+}
+
+/* input:focus {
+    border: 2px solid var(--purple);
+} */
+
+small {
+    color: red;
+    font-size: 0.6rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.submit-btn {
+    width: 70px;
+    height: 70px;
+    padding: 20px;
+    display: flex;
+    background-color: var(--purple);
+    justify-content: center;
+    align-items: center;
+    border: none;
+    /* border-radius: 100%; */
+    position: absolute;
+    right: 30px;
+    top: 100px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: black;
+}
+
+.output span {
+    font-size: 2.75rem;
+    color: var(--purple);
+    font-style: italic;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-flex {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--off-white);
+    margin-bottom: 20px;
+}
+
+.input-flex input {
+    width: calc(33.33% - 10px);
+} 
+
